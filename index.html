@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let N = +prompt("nhap so vao");
+        let count = 1;
+        for (let i= 2; i <=1000;i++){
+            if (count <= N) {
+                let Prime = true;
+                for (let j = 2; j <= (i - 1); j++) {
+                    if (i % j == 0) {
+                        Prime = false;
+                    }
+                    break;
+                }
+                if (Prime == true) {
+                    console.log(i)
+                    count++
+                }
+            }else {
+                break;
+            }
+        }
+
+    </script>
+</body>
+</html>
